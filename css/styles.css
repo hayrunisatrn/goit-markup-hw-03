@@ -303,10 +303,13 @@ ul {
     text-align: center;
 }
 
-.portfolio-list1 {
+.portfolio--list {
     list-style-type: none;
     display: flex;
-    row-gap: 48px
+    row-gap: 48px;
+    flex-wrap: wrap;
+    column-gap: 24px;
+
 }
 
 .portfolio-list {
