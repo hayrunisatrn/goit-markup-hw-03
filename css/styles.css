@@ -2,14 +2,53 @@ body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
 }
 
 img {
     display: block;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
 .header-nav-address {
     border-bottom: 1px solid #e7e9fc;
+    height: 72px;
+}
+
+.header-div {
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .container {
@@ -17,12 +56,9 @@ img {
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
+    flex-direction: column;
 }
 
-.nav {
-    display: flex;
-    align-items: center;
-}
 
 .logo_web {
     font-family: "Raleway", sans-serif;
@@ -62,6 +98,14 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+}
+
+.first-section-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .portfolio_tab:hover {
@@ -108,13 +152,11 @@ img {
 }
 
 .address_list {
-    list-style-type: none;
     display: flex;
     gap: 40px;
 }
 
 .nav_list {
-    list-style-type: none;
     display: flex;
     gap: 40px;
 }
@@ -132,6 +174,7 @@ img {
     color: #ffffff;
     background-color: #2E2F42;
     max-width: 496px;
+    margin: 0 auto 20px;
 }
 
 .button_order {
@@ -149,6 +192,8 @@ img {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
 }
 
 .button_order:hover {
@@ -163,12 +208,31 @@ img {
     cursor: pointer;
 }
 
+.about_tab {
+    padding: 120px 0;
+    background-color: #FFFFFF;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .about_table {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px
 }
 
 .about_p {
@@ -177,8 +241,17 @@ img {
     letter-spacing: 0.02em;
 }
 
+.about_tab_title {
+    visibility: hidden;
+}
+
 .about_ta {
-    list-style-type: none;
+    display: flex;
+    gap: 24px;
+}
+
+.secont-section-list {
+    width: calc((100% - 72px) / 4);
 }
 
 .our-team {
